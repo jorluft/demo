@@ -32,10 +32,18 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
+      
       <img  src="http://files.conceptcarz.com/img/Saturn/2004-Saturn-Ion-Image-006.jpg">
       <div class="carousel-caption">
-        slide 1
-      
+        <h1>Don't Miss A Tweet</h1>
+     	<% if user_signed_in? %>
+     	<h3>Welcome</h3>
+     	<% else %>
+     	<p>
+      		 <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+       		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+ 		</p> 
+     	<% end %>
   	</div>
     </div>
     <div class="item">

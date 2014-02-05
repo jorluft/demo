@@ -8,14 +8,20 @@ height:100%;
 	z-index:10;
 }
 
+.carousel{
+	position:relative;
+	z-index: 5;
+}
 
+}
 .item,
 .active,
 .carousel-inner {
 height:100%;
+width:100%;
+
 
 }
-
 
 .section {
 margin: 50px 0;
