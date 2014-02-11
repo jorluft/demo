@@ -11,6 +11,7 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'devise', '~> 3.2.2'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'activerecord-session_store'
 
 
 group :doc do
